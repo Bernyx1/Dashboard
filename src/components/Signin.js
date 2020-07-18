@@ -1,5 +1,5 @@
 import React from 'react';
-import pic from '../images/flower.jpg'
+import '../index.css'
 
 
 
@@ -7,13 +7,12 @@ function Signin() {
   return (
     <div className='container bg-primary' className='col-12' >
 
-        <div className='row mx-auto p-4 bg-white' >
-         <div className='col-4' className='float-left'>
+         {/* <div className='col-4' className='float-left'>
          <img src= {pic}  alt='Logo'/>
-         </div>
+         </div> */}
      
 
-        <div className='col-4' >
+        <div className='col-8' className='mydiv'>
           <h2>Hello, Welcome back</h2>
         <input type='text'placeholder='Username or email' className='text-muted'/>
         <br/> <br/>
@@ -32,7 +31,6 @@ function Signin() {
 
     </div>
 
-    </div>
   );
 }
 
