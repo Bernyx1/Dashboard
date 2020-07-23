@@ -7,15 +7,15 @@ function Signin() {
   return (
     <div className='container p-3 my-3 mx-auto border bg-primary' >
          <div className='row bg-white m-2 rounded-lg' >
-                <div className='col-7 0ffset-2'>
-                    <div className='col-2 float-left' >
+                <div className='col-8 '>
+                    <div className='col-3 float-left' >
                         <img className='myImage' src={pic} alt='myimage'/>
                     </div>
-                    <div className='col-1 float-right ' >
+                    <div className='col-3 float-right ' >
                       <form>
                         <div>
                             <h3>Hello,</h3>
-                            <h3>Welcome  </h3>
+                            <h3>Welcome back  </h3>
                         </div>
 
                         <div>
