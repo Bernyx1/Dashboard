@@ -1,37 +1,45 @@
-import React from 'react';
+
+import React from 'react'
+import pic from '../images/iphone.png'
 import '../index.css'
-
-
 
 function Signin() {
   return (
-    <div className='container bg-primary' className='col-12' >
+    <div className='container p-3 my-3 mx-auto border bg-primary' >
+         <div className='row bg-white m-2 rounded-lg' >
+                <div className='col-7 0ffset-2'>
+                    <div className='col-2 float-left' >
+                        <img className='myImage' src={pic} alt='myimage'/>
+                    </div>
+                    <div className='col-1 float-right ' >
+                      <form>
+                        <div>
+                            <h3>Hello,</h3>
+                            <h3>Welcome  </h3>
+                        </div>
 
-         {/* <div className='col-4' className='float-left'>
-         <img src= {pic}  alt='Logo'/>
-         </div> */}
-     
+                        <div>
+                          <input type='text' placeholder='Username or email '/> <br/><br/>
+                          <input type='password' placeholder='Password'/>
+                        </div>
 
-        <div className='col-8' className='mydiv'>
-          <h2>Hello, Welcome back</h2>
-        <input type='text'placeholder='Username or email' className='text-muted'/>
-        <br/> <br/>
-        <input type='password' placeholder='Password'/> <br/> <br/>
-    
-        <input type='checkbox'value='Remember Me'/> Remember Me
-        {/* change to link soon */}
-        <a href='' >Forgot Password?</a>
-       
-        <br/><br/>
+                        <div className='row'>
+                            <div className='col'>
+                                <input type='checkbox' value='rememberme' checked />Remember Me
+                            </div>
+                            <div>
+                              {/* change to link */}
+                              <p><a href='#link'>Forgot Password?</a></p>
+                            </div>
+                        </div>
 
-        <button className="bg-primary" >Login</button>
-        <p>Don't have an account? <a href='#'>Click here</a></p>
-        <br/><br/>
-        </div>
-
+                         <button className='bg-primary text-white'>Login</button>
+                      </form>
+                    </div>
+                </div>
+         </div>
     </div>
-
-  );
+  )
 }
 
-export default Signin;
+export default Signin
