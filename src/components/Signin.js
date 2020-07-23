@@ -33,12 +33,12 @@ function Signin() {
                             </div>
                         </div>
 
-                         <button className='bg-primary text-white loginbut'>Login</button>
+                         <button type='button' className=' btn btn-primary btn-lg text-white loginbut'>Login</button>
                          <br/>   <br/>
                          {/* change to Link */}
                          <p>Don't have an account? <a href='#redirect'>Click here</a></p>
 
-                          <div className='row'>
+                          {/* <div className='row'>
                                 <div className='col'>
                                       <button className='bg-primary text-white'><i className="far fa-play" ></i>App Store</button>
                                 </div>
@@ -47,7 +47,8 @@ function Signin() {
                                       <button className='bg-primary text-white'>Google Play</button>
                                 </div>
                           </div>
-                      </form>
+                       */}
+                       </form>
                     </div>
                 </div>
          </div>
