@@ -4,3 +4,15 @@
 
 }
 
+input{
+    border: none;
+}
+.loginbut{
+    width: 200px;
+    height: 30px;
+    border: none;
+}
+
+button{
+    border: none;
+}

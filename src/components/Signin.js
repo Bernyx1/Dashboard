@@ -7,11 +7,11 @@ function Signin() {
   return (
     <div className='container p-3 my-3 mx-auto border bg-primary' >
          <div className='row bg-white m-2 rounded-lg' >
-                <div className='col-8 '>
-                    <div className='col-3 float-left' >
+                <div className='col-10 '>
+                    <div className='col-4 float-left' >
                         <img className='myImage' src={pic} alt='myimage'/>
                     </div>
-                    <div className='col-3 float-right ' >
+                    <div className='col-4 float-right ' >
                       <form>
                         <div>
                             <h3>Hello,</h3>
@@ -19,13 +19,13 @@ function Signin() {
                         </div>
 
                         <div>
-                          <input type='text' placeholder='Username or email '/> <br/><br/>
-                          <input type='password' placeholder='Password'/>
-                        </div>
+                          <input type='text' placeholder='Username or email '/> <hr/><br/>
+                          <input type='password' placeholder='Password'/><hr/>
+                        </div> <br/>
 
                         <div className='row'>
                             <div className='col'>
-                                <input type='checkbox' value='rememberme' checked />Remember Me
+                                <input type='checkbox' value='rememberme' checked /> Remember Me
                             </div>
                             <div>
                               {/* change to link */}
@@ -33,7 +33,20 @@ function Signin() {
                             </div>
                         </div>
 
-                         <button className='bg-primary text-white'>Login</button>
+                         <button className='bg-primary text-white loginbut'>Login</button>
+                         <br/>   <br/>
+                         {/* change to Link */}
+                         <p>Don't have an account? <a href='#redirect'>Click here</a></p>
+
+                          <div className='row'>
+                                <div className='col'>
+                                      <button className='bg-primary text-white'><i className="far fa-play" ></i>App Store</button>
+                                </div>
+
+                                <div className='col'>
+                                      <button className='bg-primary text-white'>Google Play</button>
+                                </div>
+                          </div>
                       </form>
                     </div>
                 </div>
